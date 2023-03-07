@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.animate-moveRight {
+  animation: moveRight 0.5s ease-in-out forwards;
+}
+
+.animate-moveLeft {
+  animation: moveLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes moveRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: -80px;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: -80px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.my_btn:hover{
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
